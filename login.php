@@ -93,7 +93,7 @@ require_once('CRUDUser.php');
 										<div class="col-lg-8">
 											<b><a href="">Olvidé mi contraseña</a></b>
 										</div>
-										<div class="col-lg-4 text-right">
+										<div class="col-lg-4 text-right mb-5">
 											<input type="submit" name="Enviar">
 										</div>
 									</div>

@@ -47,23 +47,16 @@ session_start();
 					<h1 class="page-title">Directorio de Anime e informacion (Kitsu)</h1>
 				</header>
 
-				<div id="kitsu"></div>
+				<div id="kitsu">
+					
+				</div>
 			</article>
 			<!-- /Article -->
 
 			<!-- Sidebar -->
 			<aside class="col-sm-2 sidebar sidebar-right">
 
-				<div class="widget">
-					<h4>Vacancies</h4>
-					<ul class="list-unstyled list-spaces">
-						<li><a href="">Lorem ipsum dolor</a><br><span class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, laborum.</span></li>
-						<li><a href="">Totam, libero, quis</a><br><span class="small text-muted">Suscipit veniam debitis sed ipsam quia magnam eveniet perferendis nisi.</span></li>
-						<li><a href="">Enim, sequi dignissimos</a><br><span class="small text-muted">Reprehenderit illum quod unde quo vero ab inventore alias veritatis.</span></li>
-						<li><a href="">Suscipit, consequatur, aut</a><br><span class="small text-muted">Sed, mollitia earum debitis est itaque esse reiciendis amet cupiditate.</span></li>
-						<li><a href="">Nam, illo, veritatis</a><br><span class="small text-muted">Delectus, sapiente illo provident quo aliquam nihil beatae dignissimos itaque.</span></li>
-					</ul>
-				</div>
+				
 
 			</aside>
 			<!-- /Sidebar -->
@@ -77,6 +70,19 @@ session_start();
 	?>
 
 </body>
+<script>
+	const aux = <?php
+	if (isset($_SESSION['usuario'])) {
+		echo "1";
+	} else {
+		echo "0";
+	}
+	?>;
+	if ( aux == 1 ) {
+		usuario = "<?php echo $_SESSION['usuario'] ?>";
+		idUsuario = "<?php echo $_SESSION['idUsuario'] ?>";
+	} 
+</script>
 <script src="assets/js/loadKitsu.js"></script>
 
 </html>

@@ -49,7 +49,7 @@ require_once('templates/navbar.php')
 <h1 class="lead">Directorio Anime</h1>
 
     <br> <br>
-    <h2 class="thin">Es una aplicación web que se encarga de documentar los animes mas populares actualmente.</h2>
+    <h2 class="thin">Es una aplicación web que se encarga de documentar los animes más populares actualmente.</h2>
     <p class="text-muted">
         Desarrollada por:
         <ul class="list-unstyled text-muted ">

@@ -1,6 +1,6 @@
-<footer id="footer" class="top-space">
-    <div class="footer2">
-        <div class="container">
+<footer id="footer">
+    <div class="footer">
+        <div class="container mt-2">
             <div class="row align-items-center">
                 <div class="col-md-6 widget">
                     <div class="widget-body">
