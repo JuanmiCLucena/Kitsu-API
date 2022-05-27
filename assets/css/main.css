@@ -1,3 +1,8 @@
+body {
+    padding-bottom: 200px;
+}
+
+
 /* Header */
 
 .lead {
@@ -130,11 +135,6 @@ img.pull-left {
 }
 
 
-/* Main content block */
-
-.maincontent {}
-
-
 /* Sidebars */
 
 .sidebar {
@@ -155,47 +155,34 @@ img.pull-left {
     margin-top: 20px;
 }
 
-
-/* Footer */
-
-.follow-me-icons {
-    font-size: 30px;
-}
-
-.follow-me-icons i {
-    float: left;
-    margin: 0 10px 0 0;
-}
-
 .footer {
-    background: #191919;
-    padding: 15px 0;
-    color: #777;
-    font-size: 12px;
-    margin-top: 150px;
+    background-color: #21081a;
 }
 
 .footer a {
-    color: #aaa;
-}
-
-.footer a:hover {
-    color: #fff;
-}
-
-.footer p {
-    margin: 0;
-}
-
-.widget-simplenav {
-    margin-left: -5px;
-}
-
-.widget-simplenav a {
-    margin: 0 5px;
+    color: #ffa500;
 }
 
 .git {
     text-decoration: none;
     color: #888;
+}
+
+.card-text {
+    text-align: justify;
+    margin: 10px;
+}
+
+.enlaceAnime {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.enlaceAnime:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+#error {
+    color: #ff0000;
 }

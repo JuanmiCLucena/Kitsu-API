@@ -46,9 +46,9 @@ session_start();
 				<header class="page-header">
 					<h1 class="page-title">Directorio de Anime e informacion (Kitsu)</h1>
 				</header>
-
+				
 				<div id="kitsu">
-					
+		
 				</div>
 			</article>
 			<!-- /Article -->

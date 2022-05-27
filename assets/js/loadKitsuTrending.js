@@ -10,18 +10,23 @@ $(document).ready(
         success: function(json) {
 
             const kitsu = json.data;
+            var nombreAnime;
+            var enlaceAnime;
             for (let i = 0; i < kitsu.length; i++) {
+
+                nombreAnime = kitsu[i]["attributes"]["slug"];
+                enlaceAnime = "https://www.crunchyroll.com/es-es/" + nombreAnime;
 
                 $("#kitsu").append(
                     '<div class="card border-primary mt-4">' +
                     '<div class="card-header"><h4>' +
                     kitsu[i]["attributes"]["canonicalTitle"] +
                     "</h4>" +
-                    (aux == 1 ? "<form action='anadirfavorito.php' method='POST'><input type='hidden' name='idAnime' value='" + kitsu[i]["id"] + "'><input type='hidden' name='nombreUsuario' value='" + usuario + "'><input type='hidden' name='idUsuario' value='" + idUsuario + "'><input type='hidden' name='nombreAnime' value='" + kitsu[i]["attributes"]["canonicalTitle"] + "'><button type='submit' name='fav'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-heart' viewBox='0 0 16 16'>" +
+                    (aux == 1 ? "<form action='anadirfavorito.php' method='POST'><input type='hidden' name='idAnime' value='" + kitsu[i]["id"] + "'><input type='hidden' name='nombreUsuario' value='" + usuario + "'><input type='hidden' name='idUsuario' value='" + idUsuario + "'><input type='hidden' name='nombreAnime' value='" + kitsu[i]["attributes"]["canonicalTitle"] + "'><input type='hidden' name='enlaceAnime' value='" + enlaceAnime + "'><button type='submit' name='fav'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-heart' viewBox='0 0 16 16'>" +
                         '<path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>' +
                         '</svg></button></form></div>' : '') +
                     '<div class="card-body">' +
-                    '<img src = "' + kitsu[i]["attributes"]["coverImage"]["small"] + '"/>' +
+                    '<img alt="Imagen de portada de un anime" src = "' + kitsu[i]["attributes"]["coverImage"]["small"] + '"/>' +
                     '<p class="card-text">' +
                     kitsu[i]["attributes"]["synopsis"] +
                     "</p>" +
@@ -43,7 +48,8 @@ $(document).ready(
                     '<span class="fw-bold">Fecha de finalización:</span> ' + kitsu[i]["attributes"]["endDate"] + '<hr>' +
                     '<span class="fw-bold">Siguiente capitulo:</span> ' + kitsu[i]["attributes"]["nextRelease"] + '<hr>' +
                     '<span class="fw-bold">Guía de clasificación de edad:</span> ' + kitsu[i]["attributes"]["ageRatingGuide"] + '<hr>' +
-                    '<span class="fw-bold">Estado:</span> ' + kitsu[i]["attributes"]["status"] +
+                    '<span class="fw-bold">Estado:</span> ' + kitsu[i]["attributes"]["status"] + '<hr>' +
+                    '<a class="fw/bold" target="_blank" href="https://m.youtube.com/watch?v=' + kitsu[i]["attributes"]["youtubeVideoId"] + '">Trailer</a>' +
                     '</div>' +
                     '<div class="modal-footer">' +
                     '<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>' +
@@ -51,12 +57,14 @@ $(document).ready(
                     '</div>' +
                     '</div>' +
                     '</div>' +
-                    '<a href="https://kitsu.io/anime/' +
+                    '<a target="_blank" href="https://kitsu.io/anime/' +
                     kitsu[i]["id"] +
                     '" class="btn btn-primary float-lg-end">&#10010; Info</a>' +
                     "</div>" +
                     "</div>"
                 );
+
+
 
 
             }
