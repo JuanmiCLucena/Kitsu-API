@@ -80,7 +80,6 @@ session_start();
 				</div>
 			</div>
 		</div> <!-- /container -->
-		<script defer src=""></script>
 
 	<?php
 	} else {
