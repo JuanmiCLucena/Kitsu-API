@@ -75,7 +75,7 @@ require_once('templates/navbar.php')
             </div>
             <div class="col-md-3 col-sm-6 highlight">
                 <div class="h-caption">
-                    <h4><i class="fas fa-server"></i><a href="https://kitsu.docs.apiary.io/#" class="text-decoration-none text-success">KITSU API</a></h4>
+                    <h4><i class="fas fa-server"></i><a href="https://kitsu.docs.apiary.io/#" class="text-decoration-none text-primary">KITSU API</a></h4>
                 </div>
                 <div class="h-body text-center">
                     <p>Es una plataforma moderna de descubrimiento de anime que te ayuda a rastrear el anime que estas viendo, descubrir anime nuevo y socializar con otros fans. 
