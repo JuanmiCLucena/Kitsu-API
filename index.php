@@ -35,9 +35,9 @@ require_once('templates/navbar.php')
 <header id="head">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4 px-0 mx-0 d-none d-lg-block"><img src="assets/images/dragon-ball.jpg" alt="Imagen de Dragon Ball" class="h-100"></div>
-            <div class="col-lg-4 px-0 mx-0"><img src="assets/images/one-piece.jpg" alt="Imagen de One Piece" class="h-100"></div>
-            <div class="col-lg-4 px-0 mx-0 d-none d-lg-block"><img src="assets/images/naruto.jpg" alt="Imagen de Naruto" class="h-100"></div>
+            <div class="col-lg-4 px-0 mx-0 d-none d-lg-block"><img src="assets/images/dragon-ball.webp" alt="Imagen de Dragon Ball" class="h-100"></div>
+            <div class="col-lg-4 px-0 mx-0"><img src="assets/images/one-piece.webp" alt="Imagen de One Piece" class="h-100"></div>
+            <div class="col-lg-4 px-0 mx-0 d-none d-lg-block"><img src="assets/images/naruto.webp" alt="Imagen de Naruto" class="h-100"></div>
         </div>
     </div>
 </header>
